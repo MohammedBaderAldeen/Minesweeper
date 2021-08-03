@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainMenuController">
+   <children>
+      <ImageView fitHeight="789.0" fitWidth="1158.0" layoutY="-18.0" pickOnBounds="true">
+         <image>
+            <Image url="@../4.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="203.0" prefHeight="21.0" prefWidth="79.0" text="Width" textFill="#f5f0f0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="263.0" prefHeight="21.0" prefWidth="79.0" text="Height" textFill="#f2ebeb">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="57.0" layoutY="317.0" text="Bombs" textFill="#f5f3f3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="56.0" layoutY="372.0" text="Players" textFill="#ebe3e3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="56.0" layoutY="420.0" text="Shields" textFill="#f5efef">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="44.0" layoutY="479.0" text="ShieldInit" textFill="#f8f6f6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="46.0" layoutY="526.0" text="PlayTime" textFill="#f8f1f1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="1.0" layoutY="575.0" text="MovingShields" textFill="#fff7f7">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="625.0" text="playerNames" textFill="#f8f4f4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="width" disable="true" layoutX="154.0" layoutY="205.0" prefHeight="26.0" prefWidth="102.0" />
+      <TextField fx:id="height" disable="true" layoutX="154.0" layoutY="265.0" prefHeight="26.0" prefWidth="102.0" />
+      <TextField fx:id="bombs" disable="true" layoutX="154.0" layoutY="319.0" prefHeight="26.0" prefWidth="102.0" />
+      <TextField fx:id="playersCount" disable="true" layoutX="154.0" layoutY="374.0" prefHeight="26.0" prefWidth="102.0" />
+       <TextField fx:id="shieldCount" disable="true" layoutX="154.0" layoutY="422.0" prefHeight="26.0" prefWidth="102.0" />
+       <TextField fx:id="shieldInit" disable="true" layoutX="154.0" layoutY="481.0" prefHeight="26.0" prefWidth="102.0" />
+       <TextField fx:id="PlayTime" disable="true" layoutX="154.0" layoutY="528.0" prefHeight="26.0" prefWidth="102.0" />
+       <TextField fx:id="MovingShield" disable="true" layoutX="154.0" layoutY="577.0" prefHeight="26.0" prefWidth="102.0" />
+       <CheckBox id="ComputerShield" fx:id="ComputerShield" layoutX="21.0" layoutY="674.0" mnemonicParsing="false" text="ComputerShields" textFill="#ebeaea">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </CheckBox>
+      <CheckBox id="ComputerShield" fx:id="record" layoutX="21.0" layoutY="717.0" mnemonicParsing="false" text="RecordGame" textFill="#f5efef">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="TextNmaes" disable="true" layoutX="158.0" layoutY="627.0" prefHeight="26.0" prefWidth="175.0" />
+      <CheckBox id="custome" fx:id="custom" layoutX="39.0" layoutY="15.0" mnemonicParsing="false" onAction="#customOnAction" text="Custom" textFill="#f2eaea">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox id="ccc" fx:id="CCC" layoutX="157.0" layoutY="15.0" mnemonicParsing="false" text="Auto Save" textFill="#fff9f9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <RadioButton fx:id="singleMode" layoutX="38.0" layoutY="49.0" mnemonicParsing="false" selected="true" text="Single Mode" textFill="#fffafa">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="multiPlayerMode" layoutX="38.0" layoutY="141.0" mnemonicParsing="false" text="Multi Player Mode" textFill="#f5f5f5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="vsComputerMode" layoutX="39.0" layoutY="94.0" mnemonicParsing="false" text="vs. Computer">
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="0.7572815533980582" startX="1.0">
+               <stops>
+                  <Stop color="#ebe2e2" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="playButton" defaultButton="true" layoutX="900.0" layoutY="140.0" mnemonicParsing="false" onMouseClicked="#onPlayButtonClicked" prefHeight="73.0" prefWidth="206.0" text="Play" textFill="#300f8a">
+         <font>
+            <Font name="Khmer OS System" size="18.0" />
+         </font>
+      </Button>
+         <Button fx:id="loadButton" defaultButton="true" layoutX="900.0" layoutY="264.0" mnemonicParsing="false" onMouseClicked="#onLoadButtonClicked" prefHeight="64.0" prefWidth="206.0" text="Load" textFill="#301087">
+         <font>
+            <Font name="Khmer OS System" size="18.0" />
+         </font>
+      </Button>
+         <Button fx:id="ReplayButton" defaultButton="true" layoutX="900.0" layoutY="482.0" mnemonicParsing="false" onMouseClicked="#onReplayButtonClicked" prefHeight="64.0" prefWidth="206.0" text="Replay" textFill="#301087">
+         <font>
+            <Font name="Khmer OS System" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="ReplayButton1" defaultButton="true" layoutX="900.0" layoutY="585.0" mnemonicParsing="false" onMouseClicked="#onScoreButtonClicked" prefHeight="64.0" prefWidth="206.0" text="ScoreBoard" textFill="#301087">
+         <font>
+            <Font name="Khmer OS System" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="RecentButton" defaultButton="true" layoutX="900.0" layoutY="373.0" mnemonicParsing="false" onAction="#onRecetButtonClicked" prefHeight="64.0" prefWidth="206.0" text="Quick Load" textFill="#301087">
+         <font>
+            <Font name="Khmer OS System" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
